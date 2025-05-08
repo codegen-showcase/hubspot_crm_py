@@ -19,58 +19,58 @@ default_module_structure: path
 modules:
 - path: contacts
   operations:
-  - id: delete_by_contact_id
+  - id: hubspot-contacts.delete_by_contact_id
     function_name: delete
-  - id: get-/crm/v3/objects/contacts_getPage
+  - id: hubspot-contacts.get-/crm/v3/objects/contacts_getPage
     function_name: list
-  - id: get_contact_by_id
+  - id: hubspot-contacts.get_contact_by_id
     function_name: get
-  - id: post-/crm/v3/objects/contacts_create
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts_create
     function_name: create
-  - id: update_by_contact_id
+  - id: hubspot-contacts.update_by_contact_id
     function_name: patch
-  - id: post-/crm/v3/objects/contacts/gdpr-delete_purge
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/gdpr-delete_purge
     function_name: gdpr_delete
-  - id: post-/crm/v3/objects/contacts/merge_merge
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/merge_merge
     function_name: merge
-  - id: post-/crm/v3/objects/contacts/search_doSearch
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/search_doSearch
     function_name: search
 - path: contacts.batch
   operations:
-  - id: post-/crm/v3/objects/contacts/batch/archive_archive
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/batch/archive_archive
     function_name: archive
-  - id: post-/crm/v3/objects/contacts/batch/create_create
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/batch/create_create
     function_name: create
-  - id: post-/crm/v3/objects/contacts/batch/read_read
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/batch/read_read
     function_name: read
-  - id: post-/crm/v3/objects/contacts/batch/update_update
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/batch/update_update
     function_name: update
-  - id: post-/crm/v3/objects/contacts/batch/upsert_upsert
+  - id: hubspot-contacts.post-/crm/v3/objects/contacts/batch/upsert_upsert
     function_name: upsert
 
 - path: meetings
   operations:
-  - id: delete_by_meeting_id
+  - id: hubspot-meetings.delete_by_meeting_id
     function_name: delete
-  - id: get-/crm/v3/objects/meetings_getPage
+  - id: hubspot-meetings.get-/crm/v3/objects/meetings_getPage
     function_name: list
-  - id: get_by_meeting_id
+  - id: hubspot-meetings.get_by_meeting_id
     function_name: get
-  - id: patch_by_meeting_id
+  - id: hubspot-meetings.patch_by_meeting_id
     function_name: patch
-  - id: post-/crm/v3/objects/meetings_create
+  - id: hubspot-meetings.post-/crm/v3/objects/meetings_create
     function_name: create
-  - id: post-/crm/v3/objects/meetings/search_doSearch
+  - id: hubspot-meetings.post-/crm/v3/objects/meetings/search_doSearch
     function_name: search
 - path: meetings.batch
   operations:
-  - id: post-/crm/v3/objects/meetings/batch/archive_archive
+  - id: hubspot-meetings.post-/crm/v3/objects/meetings/batch/archive_archive
     function_name: archive
-  - id: post-/crm/v3/objects/meetings/batch/create_create
+  - id: hubspot-meetings.post-/crm/v3/objects/meetings/batch/create_create
     function_name: create
-  - id: post-/crm/v3/objects/meetings/batch/read_read
+  - id: hubspot-meetings.post-/crm/v3/objects/meetings/batch/read_read
     function_name: read
-  - id: post-/crm/v3/objects/meetings/batch/update_update
+  - id: hubspot-meetings.post-/crm/v3/objects/meetings/batch/update_update
     function_name: update
-  - id: post-/crm/v3/objects/meetings/batch/upsert_upsert
+  - id: hubspot-meetings.post-/crm/v3/objects/meetings/batch/upsert_upsert
     function_name: upsert
